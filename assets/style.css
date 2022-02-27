@@ -28,10 +28,10 @@ a:hover {
     color:grey;
 }
 
-.protfolio {
+.portfolio {
     color: black;
     float: left;
-    padding-left: 25px;
+    padding-left: 20px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -39,5 +39,26 @@ a:hover {
 .header-image{
     width: 100%;
     display: flex;
+    max-height: 200px;
 }
 
+section article {
+    width: 75%;
+    display: inline-block;
+    margin: 20px;
+}
+ section h2{
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+section h2:hover {
+    color: grey;
+}
+/* section article#about-me{
+   background-image: url(./images/header-image.jpg);
+} */
+article#about-me.content{
+position: relative;
+left: 100px;
+
+}
