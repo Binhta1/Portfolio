@@ -1,25 +1,33 @@
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: auto;
-}
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+header{
+    background-image: url(./images/header-image1.jpg);
+    background-size: cover;
+    padding: 75px;
+    display: flex;
+    justify-content: space-between;
+}
 header nav{
-    background-color:#ffffff;
     color: black;
     list-style: none;
-    text-align: right;
-    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
 }
-header li {
-    display: inline-block;
-    padding: 0 25px 0 25px;
+header nav ul{
+    display: flex;
+    
+}
+header nav ul li {
+    display: flex;
+    justify-content: space-between;
     font-size: 20px;
+    margin: 20px;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -28,37 +36,34 @@ a:hover {
     color:grey;
 }
 
-.portfolio {
-    color: black;
-    float: left;
-    padding-left: 20px;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.header-image{
-    width: 100%;
-    display: flex;
-    max-height: 200px;
-}
-
-section article {
-    width: 75%;
-    display: inline-block;
-    margin: 20px;
-}
  section h2{
+     font-size: 30px;
      font-family: 'Times New Roman', Times, serif;
  }
 
 section h2:hover {
     color: grey;
 }
-/* section article#about-me{
-   background-image: url(./images/header-image.jpg);
-} */
-article#about-me.content{
-position: relative;
-left: 100px;
 
+.bio {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    border: 2px solid black;
+}
+.bio-pic{
+    border: 2px solid black;
+    padding: 150px;
+    background-image: url(./images/binhta.jpg);
+    background-size: cover;
+
+}
+
+.bio p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 20px;
+    border: 2px solid black ;
+    align-self: flex-start ;
+    display: flex;
 }
