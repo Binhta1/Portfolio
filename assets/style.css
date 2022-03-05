@@ -10,6 +10,7 @@ header{
     padding: 75px;
     display: flex;
     justify-content: space-between;
+    border: 2px solid black;
 }
 header nav{
     color: black;
@@ -45,7 +46,7 @@ section h2:hover {
     color: grey;
 }
 
-.bio {
+article {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -66,4 +67,45 @@ section h2:hover {
     border: 2px solid black ;
     align-self: flex-start ;
     display: flex;
+}
+.my-work h2 {
+    display: flex;
+    padding:10px;
+}
+.my-work img{
+ max-height: 200px;
+ display: flex;
+ border: none;
+ margin: 10px;
+ padding: 10px;
+}
+.project-content{
+    display: flex;
+    justify-content: center;
+}
+.project {
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    width: auto;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+
+}
+.contactinfo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    width: 75%;
+
+}
+.contactinfo a{
+    margin: 0 30px;
 }
