@@ -1,24 +1,30 @@
 
-body{
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    background-color: moccasin;
 }
-header{
+ /* start of header */
+header {
     background-image: url(./images/header-image1.jpg);
     background-size: cover;
     padding: 75px;
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px;
 }
-header nav{
+header nav {
     color: black;
     list-style: none;
     display: flex;
     flex-direction: row;
 }
-header nav ul{
+header nav ul {
     display: flex;
     
 }
@@ -29,7 +35,7 @@ header nav ul li {
     margin: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -37,11 +43,14 @@ a:hover {
     color:grey;
 }
 
- section h2{
-     font-size: 30px;
-     font-family: 'Times New Roman', Times, serif;
+h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
  }
+ /* end of header
 
+ start of section */
 section h2:hover {
     color: grey;
 }
@@ -50,62 +59,92 @@ article {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
-    border: 2px solid black;
+    border: 2px;
 }
-.bio-pic{
-    border: 2px solid black;
+.bio-pic {
+    border: 2px;
     padding: 150px;
     background-image: url(./images/binhta.jpg);
     background-size: cover;
-
 }
 
 .bio p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     margin-left: 20px;
-    border: 2px solid black ;
-    align-self: flex-start ;
+    border: 2px  ;
     display: flex;
+    align-self: flex-start;    
 }
-.my-work h2 {
+
+.my-work {
     display: flex;
-    padding:10px;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
 }
-.my-work img{
- max-height: 200px;
- display: flex;
- border: none;
- margin: 10px;
- padding: 10px;
+
+/* start of my work */
+.my-work :hover{
+    color: grey;
 }
 .project-content{
     display: flex;
-    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
 }
 .project {
-    align-items: center;
-    justify-content:center;
-    display: flex;
-    height: 300px;
+    display: flex; 
     flex-direction: column;
-    width: auto;
 }
-.contact {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-   
 
+/* style of the img  */
+
+.project a img{
+    height: 10%;
+    width: 10%;
 }
+.project-main {
+    display: flex;
+    flex-direction: column ;
+}
+
+.project-main a img{
+    height: 20%;
+    width: 20%;
+}
+.project-main img:hover{
+    scale: 1.5em;
+}
+/* start of contact */
+
 .contactinfo{
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
     justify-content: space-between;
-    width: 75%;
-
+    align-content: center;   
 }
-.contactinfo a{
+.info ul {
+    flex-wrap: wrap;
+   display: flex;
+   justify-content: space-around;
+}
+.info ul li {
     margin: 0 30px;
 }
+
+/* start of media query */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        position: relative;
+        background-size: cover;
+    }
+    section{
+        padding: 20px 10px;
+    }
+    
+}
+  
